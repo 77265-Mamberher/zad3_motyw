@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semen Mamberher - CV</title>
+    <link rel="stylesheet" href="red.css">
+</head>
+<body>
+
+    <header>
+        <h1>Semen Mamberher - CV</h1>
+        <img src="1.jpg" alt="Zdjęcie profilowe Semena Mamberhera" class="profile-img">
+    </header>
+
+    <main>
+        <section>
+            <h2>Kontakt</h2>
+            <ul>
+                <li>
+                    E-mail: <a href="mailto:s.m@example.com">s.m@example.com</a> 
+                    <button class="copy-btn" onclick="copyToClipboard('s.m@example.com', this)">Kopiuj</button>
+                </li>
+                <li>
+                    Telefon: <a href="tel:+48123456789">+48 123 456 789</a> 
+                    <button class="copy-btn" onclick="copyToClipboard('+48123456789', this)">Kopiuj</button>
+                </li>
+                <li>Miasto: Warszawa</li>
+            </ul>
+            
+            <p>Profile zewnętrzne:</p>
+            <ul>
+                <li><a href="https://github.com/77265_Mamberher" target="_blank" rel="noopener noreferrer">Mój profil GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/example/" target="_blank" rel="noopener noreferrer">Mój profil LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>O mnie</h2>
+            <p>Jestem studentem informatyki z pasją do programowania. Posiadam już doświadczenie w tworzeniu aplikacji okienkowych w języku C# (Windows Forms) oraz uczę się technologii webowych (HTML, CSS). Zawsze chętnie podejmuję nowe wyzwania algorytmiczne i logiczne.</p>
+        </section>
+
+        <section>
+            <h2>Umiejętności</h2>
+            <ul>
+                <li>Programowanie obiektowe w C#</li>
+                <li>Tworzenie interfejsów Windows Forms</li>
+                <li>Podstawy HTML5 i CSS3</li>
+                <li>Operacje na systemach plików i algorytmika</li>
+                <li>Korzystanie z systemu kontroli wersji (Git/GitHub)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Doświadczenie</h2>
+            <article>
+                <h3>Twórca Aplikacji Uczelnianych - Projekt studencki</h3>
+                <p><strong>Okres:</strong> 2025</p>
+                <p>Samodzielne zaprojektowanie i napisanie rozbudowanego symulatora Bankomatu oraz Automatu Vendingowego. Zarządzanie stanem konta, wirtualną walutą oraz generowanie paragonów (GDI+).</p>
+            </article>
+
+            <article>
+                <h3>Praktykant IT / Pomoc techniczna (Freelance)</h3>
+                <p><strong>Okres:</strong> 2024</p>
+                <p>Diagnozowanie prostych problemów sprzętowych i programowych. Konfiguracja środowisk roboczych oraz pomoc w utrzymaniu systemów operacyjnych Windows.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Edukacja</h2>
+            <p>Obecnie: Studia inżynierskie na kierunku Informatyka (I rok). Rozwój kompetencji w zakresie programowania i technologii internetowych.</p>
+        </section>
+
+        <section>
+            <h2>Projekty</h2>
+            <ul>
+                <li><strong>Symulator Bankomatu (C#)</strong> – Aplikacja desktopowa z autorskim algorytmem zachłannym do wydawania reszty i zapisem stanu do plików tekstowych.</li>
+                <li><strong>Interaktywne CV (HTML/CSS)</strong> – W pełni semantyczna strona WWW ostylowana w odcieniach zieleni, z funkcją kopiowania.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2026 Semen Mamberher. Zadanie 3 - Motywy CSS.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(text, btn) {
+            navigator.clipboard.writeText(text).then(function() {
+                var originalText = btn.innerText;
+                btn.innerText = "Skopiowano!";
+                setTimeout(function() {
+                    btn.innerText = originalText;
+                }, 1500);
+            });
+        }
+    </script>
+
+</body>
+</html>
